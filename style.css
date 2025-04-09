@@ -263,6 +263,8 @@ main {
     background-color: #fff;
     border-radius: 10px ;
     color: #013;
+    overflow: hidden;
+    
     
 }
 
@@ -270,6 +272,7 @@ main {
     width: 50%;
     border: 1px solid #013;
     border-radius: 10px;    
+
 }
 
 .seg-wrapper{
@@ -314,16 +317,15 @@ main {
     border-radius: 5px 5px 0px 0px;
 }
 
-.add-task{
+#add-task{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 200px;
-    max-height: 500px ;
-    border: 1px solid #013;
-    border-radius: 10px;
-    margin: 10px 0px;
+    margin: 10px 0px;    
+    min-height: 20px;
+    max-height: 500px;
+    overflow-y:auto;
     
 }
 

@@ -245,6 +245,127 @@ main {
     padding: 0px 10px;
 }
 
+
+/*==========================*/
+/* LIST TASKS SECTION */
+/*==========================*/
+
+
+.seg-tasks{
+    display: flex;
+    position: relative;
+    width: 99%;
+    height: 100vh;
+    margin: .5%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 10px ;
+    color: #013;
+    
+}
+
+.seg-task-body{
+    width: 50%;
+    border: 1px solid #013;
+    border-radius: 10px;    
+}
+
+.seg-wrapper{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 30px 50px;
+
+}
+
+.seg-wrapper label{
+    padding: 10px 0px;
+    font-size: 30px;
+
+}
+
+.task-input{
+    display: flex;
+    width: 100%;
+    border-left: none;
+}
+
+.task-input input{
+    width: 100%;
+    border: 1px solid #013;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.ls-button{
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #123;
+    color: #abc;
+    border:none ;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.remove-task{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.add-task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    max-height: 500px ;
+    border: 1px solid #013;
+    border-radius: 10px;
+    margin: 10px 0px;
+    
+}
+
+/* TASK ITEMS CONTENT*/
+
+.task-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 98%;
+    margin: 10px 5px;
+    border-bottom:1px solid #013;
+        
+}
+
+
+
+.task-item div{
+    overflow: hidden;
+
+}
+.task-item input:checked ~ div{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-chkb{
+    scale: 1.5;
+}
+
+.task-texto{
+    font-size: 20px;;
+}
+
+
+.remove-task{
+    right: 10px;
+}
+
+
+
 /*==========================*/
 /* CHANGELOG SECTION */
 /*==========================*/
@@ -252,7 +373,7 @@ main {
 .changelog{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 99%;
     margin: 10px .5%;
     border-radius: 10px;
     background-color: #fff;
